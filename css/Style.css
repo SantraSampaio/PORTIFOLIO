@@ -8,7 +8,6 @@
 
 body{
     background-size: cover;
-
     line-height: 150%;
 
 }
@@ -17,7 +16,6 @@ body{
     max-width: 100%;
 }
 
-
 /* Cabeçalho */
 
 header{
@@ -25,10 +23,9 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding:30px 50px;
+    padding:30px 8%;
     box-shadow: 0px 0.5px 140px bisque;
     backdrop-filter: blur(1000px);
-
 
 }
 .S{
@@ -114,17 +111,19 @@ main {
 
 section{
     display: flex;    
-    flex-direction: row;
-    gap: 200px;
+   flex-direction: row;
+    gap: 30px;
     max-width: 100%;
     box-shadow: 10px 10px 20px bisque;
-    padding: 100px
+    padding: 100px;
+    align-items: center;
+    
 }
 .text{
     display: flex;
     flex-direction: column;
-    padding: 10px;
-        max-width: 100%;
+    max-width: 100%;
+
 
 }
 .desc{
@@ -134,6 +133,7 @@ section{
     color: rgb(175, 139, 97);
         max-width: 100%;
 
+
 }
 
 b {
@@ -142,14 +142,23 @@ b {
     color: bisque;
     text-align: start;
     max-width: 100%;
+    line-height: 100%;
+
 
 }
 
 img{
-    display: flex;
     border-radius: 50%;
     border: 1px solid bisque;
 }
+
+.pic{
+
+    justify-self: center; 
+    align-self: center;  
+
+}
+
 
 .piic:hover{
     border: 1px solid rgb(0, 0, 0);
@@ -161,12 +170,18 @@ i{
     display: flex;
     font-size: 30px;
     color: bisque;
-    
 }
 
 .por{
     display: flex;
     gap: 30px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 footer{
@@ -176,6 +191,46 @@ footer{
     text-align: center;
     color: bisque;
 }
+
+
+
+
+@media screen and (max-width: 1170px){
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    img{
+        height: auto;
+        width: 200px;
+        max-width: 100%;
+    }
+    b{
+        display: flex;
+        text-align: center;
+        font-size: 40px;
+        justify-content: center;
+    }
+        .desc{
+        display: flex;
+        text-align: justify;
+        font-size: 40px;
+    }
+        .por, .sobre{
+        display: flex;
+        justify-content: center;
+    }
+    .menu{
+        display: none;
+    }
+
+}
+    
+
 
 
 
