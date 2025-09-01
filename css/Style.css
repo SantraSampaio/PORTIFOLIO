@@ -36,12 +36,13 @@ header{
 
 
 }
-    .icon-menu{
+.icon-menu{
         display: none;
-    }
+    } 
 .menu-nav{
     display: none;
 }
+
 .S{
     display: flex;
     border: 2px solid bisque;
@@ -256,8 +257,6 @@ footer{
         display: none;
     }
 
-
-
     .menu-nav{
         display:none;
     }    
@@ -265,7 +264,6 @@ footer{
         border: none;
         flex-direction: column;
         align-items: center;
-        text-align: center;
         padding: 20px 0;
         width: 100%;
     }
@@ -295,9 +293,8 @@ footer{
 
     .icon-menu{
         display: flex;
-        padding: 0px 10px;
-    }
-    .icon-menu button{
+        }
+    /* .icon-menu button{
         display: flex;
         flex-direction: column;
         background-color: transparent;
@@ -310,9 +307,11 @@ footer{
         width: 20px;
         height: 2px;
         border-radius: 10px;
-        
+    }  */
+    #bar{
+    display: flex;
+}
 
-    }
 .S{
     display: flex;
     height: 10px;
@@ -330,10 +329,22 @@ font-size: 15px;
     transition: 0.8s;
 }
 
+.botao{
+    display: flex; 
+}
+
+
+.icon-menu i{
+font-size: 25px;
 
 }
-   
 
+
+i{
+    cursor: pointer;
+}
+
+}
 
 @media screen and (max-width:393px){
         .line{
